@@ -130,10 +130,6 @@ input[type='checkbox']:checked {
   font-size: 14px;
 }
 
-.quantos-de-cada {
-
-}
-
 .quantos-de-cada__menos {
   background: url(menos.svg) center right no-repeat;
   border: none;
