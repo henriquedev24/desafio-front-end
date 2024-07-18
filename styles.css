@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: rebeccapurple;
+  background: darkblue;
   color: #071723;
 }
 
@@ -30,20 +30,21 @@ body {
   width: 550px;
 }
 
+.form {
+  margin: 32px;
+}
+
 .space {
   margin-bottom: 16px;
 }
 
-.space-md {
-  margin-bottom: 32px;
-}
-
-.label {
+.pay
+.obs {
   font-size: 18px;
   font-weight: 600;
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   background: url(images/header.png) center right no-repeat;
@@ -53,7 +54,7 @@ body {
   width: 100%;
 }
 
-.header .title {
+header .title {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -61,13 +62,51 @@ body {
   font-weight: 300;
 }
 
-.header .title span {
+header .title span {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.46;
 }
 
-.form textarea {
+.pay {
+  display: flex;
+  flex-direction: column;
+}
+
+.pay label {
+  margin-bottom: 13px;
+}
+
+.obs {
+  padding: 0 32px;
+  margin-top: 22px;
+  list-style: none;
+}
+
+.dinheiro {
+  text-align: start;
+  padding-bottom: 16px;
+  width: 25%;
+  height: 25px;
+  border-radius: 6px;
+  border: 1px solid #191847;
+}
+
+.list-stickers {
+  list-style: none;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.list-stickers input {
+  width: 24px;
+  height: 24px;
+  background: rgba(47, 54, 118, 1);
+}
+
+.descricao {
   background: #dde3e9;
   border: 1px solid #2f3676;
   border-radius: 8px;
@@ -79,14 +118,9 @@ body {
   font-size: 14px;
 }
 
-.fieldset {
-  padding: 0 32px;
-  margin-top: 30px;
-  list-style: none;
-}
-
-li {
-  padding-bottom: 10px;
+.counter {
+  padding-top: 16px;
+  padding-bottom: 13px;
 }
 
 .counter svg {
@@ -100,18 +134,29 @@ li {
   font-size: 20px;
   font-weight: bold;
   margin: 0 8px;
+  padding: 0 22px;
   width: 60px;
 }
 
-.footer {
+.obs {
+  padding: 0;
+  margin-left: 0;
+}
+
+.obs label {
+  margin-bottom: 13px;
+}
+
+footer {
   padding: 32px;
+  padding-top: 32px;
   background: #dde3e9;
   display: flex;
   justify-content: flex-end;
 }
 
-.footer button {
-  appearance: none;
+footer button {
+  appearance: auto;
   background: #2f3676;
   border: 0;
   border-radius: 8px;
@@ -123,8 +168,8 @@ li {
   padding: 8px 32px;
 }
 
-.footer button:focus,
-.footer button:hover {
+footer button:focus,
+footer button:hover {
   border: 2px solid #2f3676;
   background: #191847;
 }

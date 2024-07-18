@@ -9,13 +9,13 @@
 
 <body>
 	<main class="box">
-		<div class="header">
+		<header>
 			<div class="title">Formulário para compra de <span>Pacote de Stickers</span></div>
-		</div>
+		</header>
 		<div class="space"></div>
 		<div class="form">
 			<div class="space"></div>
-			<ul class="fieldset">
+			<ul class="list-stickers">
 				<li class="label">Quais stickers:</li>
 				<li><input type="checkbox" /> React</li>
 				<li><input type="checkbox" /> Vue</li>
@@ -23,7 +23,7 @@
 				<li><input type="checkbox" /> Next</li>
 			</ul>
 			<div class="space-md"></div>
-			<div class="fieldset">
+			<div class="numstickers">
 				<div class="label">Quantos stickers de cada?</div>
 				<div class="counter">
 					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
@@ -37,20 +37,18 @@
 					</svg>
 				</div>
 			</div>
-			<div class="fieldset">
-				<div class="label">Quanto vai pagar?</div>
-				<input name="campo1" onkeypress="mascara(this,mreais)" size="7" min="10,00" max="1.064,00" />
+			<div class="pay">
+				<label>Quanto vai pagar?</label>
+				<input class="dinheiro" name="dinheiro"/>
+			</div>
+			<div class="obs">
+				<label>Observações:</label>
+				<input class="descricao" placeholder="Dúvidas?"></input>
 			</div>
 			<div class="space-md"></div>
-			<div class="fieldset">
-				<div class="label">Observações:</div>
-				<div class="space"></div>
-				<textarea name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
-			</div>
-			<div class="space-md"></div>
-			<div class="footer">
-				<button>Enviar</button>
-			</div>
+			<footer>
+				<button type="submit" onclick="mostrarMensagem()">Enviar</button>
+			</footer>
 		</div>
 	</main>
 
